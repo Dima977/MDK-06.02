@@ -16,12 +16,12 @@ def create_connection(host_name, user_name, user_password, db_name):
 
     return connection
 
-connection = create_connection("5.183.188.13", "db_vgu_student", "thasrCt3pKYWAYcK", "db_vgu_test4")
+connection = create_connection("5.183.188.132", "db_vgu_student", "thasrCt3pKYWAYcK", "db_vgu_test4")
 
-# select_bd = "SELECT * FROM setting"
-# with connection.cursor() as cursor:
-#     cursor.execute(select_bd)
-#     result = cursor.fetchall()
-#     for row in result:
-#         print(row)
+select_bd = "SELECT * FROM setting"
+with connection.cursor() as cursor:
+    cursor.execute(select_bd)
+    result = cursor.fetchall()
+    for row in result:
+        print(row)
 
